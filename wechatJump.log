@@ -1,0 +1,5 @@
+INFO:root:press_time_rate :1.392,1515327881.824145
+INFO:root:distance is : 340.113216 
+INFO:root:adb shell input swipe 316 406 316 406 473
+INFO:root:distance is : 343.169055 
+INFO:root:adb shell input swipe 323 410 323 410 477
