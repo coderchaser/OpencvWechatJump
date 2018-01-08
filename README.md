@@ -3,6 +3,7 @@ Totally depends on https://github.com/wangshub/wechat_jump_game. Half automation
 
 完全Opencv的半自动微信跳一跳，原理参照了@wangshub的开源项目wechat_jump_game,地址：
 <center>https://github.com/wangshub/wechat_jump_game</center>
+
 另外，机型参数也使用了wechat_jump_game的参数。
 **感谢@wangshub的许可以及社区前辈们的贡献。**
 
