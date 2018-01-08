@@ -24,11 +24,11 @@ def get_screen_size():
 	获取手机屏幕分辨率
 	'''
 	# process=subprocess.Popen("adb wm size",shell=True,stdout=subprocess.PIPE)
-	stdout_result=os.popen("adb shell wm size").read()
 	try:
+		stdout_result=os.popen("adb shell wm size").read()
 		if not stdout_result :
-			raise RuntimeError("请确保已经安装了ADB并配置好了环境变量，Android手机连接正常打开USB调试模式后重新运行程序")
-	except RuntimeError as e:
+			raise IOError("请确保已经安装了ADB并配置好了环境变量，Android手机连接正常打开USB调试模式后重新运行程序")
+	except IOError as e:
 		print(e)
 		sys.exit()
 	size=re.search(r"(d+) (d+)",stdout_result)
